@@ -33,16 +33,16 @@
 
 <h1>Privacy Policy for SandCat</h1>
 
-<p><strong>Last updated:</strong> April 30, 2026</p>
+<p><strong>Last updated:</strong> May 16, 2026</p>
 
 <h2>1. Introduction</h2>
 <p>
 SandCat is a browser extension designed to assist with aviation data lookup,
-live aviation overlays, ADS-B analysis, airport information, workflow utilities,
-and related aviation research tools.
+ADS-B analysis, live aviation overlays, airport and procedure search,
+workflow utilities, and related aviation research tools.
 </p>
 
-<h2>2. Information We Collect</h2>
+<h2>2. Information SandCat Processes</h2>
 
 <h3>Local Data Storage</h3>
 <p>
@@ -50,95 +50,131 @@ SandCat may store data locally on your device using browser storage. This may in
 </p>
 <ul>
   <li>User preferences and settings</li>
-  <li>Cached aviation data, such as airports, runways, waypoints, navaids, and procedures</li>
-  <li>Temporary session data, such as selected aircraft or active flight context</li>
+  <li>Cached aviation datasets, including airports, runways, waypoints, navaids, procedures, frequencies, and visual reporting points</li>
+  <li>Temporary session data, such as selected aircraft, active flight context, saved search state, or extension UI preferences</li>
 </ul>
 <p>
-This data remains on your device and is not transmitted to any SandCat-owned server.
+This data remains on your device unless a feature explicitly requires a user-directed request
+to an external aviation or utility service.
 </p>
 
 <h3>Clipboard Access</h3>
 <p>
 SandCat may read clipboard data only when explicitly triggered by the user,
-such as when pasting an ICAO code, callsign, route string, global key, or other
-aviation-related identifier into the extension.
+such as when pasting an ICAO code, callsign, route string, global key, frequency,
+waypoint, or aviation-related identifier into the extension.
 </p>
 <p>
 Clipboard contents are used temporarily for parsing and lookup features.
-Clipboard data is not stored, transmitted, sold, or shared.
+Clipboard data is not sold, shared, or used for tracking.
 </p>
 
-<h3>No Personal Data Collection</h3>
+<h3>Downloads</h3>
+<p>
+SandCat may use the browser downloads permission to allow the user to export or download
+aviation-related data, generated files, logs, or lookup results when the user initiates that action.
+</p>
+
+<h3>Notifications, Alarms, and Timed Tasks</h3>
+<p>
+SandCat may use alarms for scheduled extension tasks, periodic local checks, refresh reminders,
+cached-data updates, or user-enabled aviation workflow features.
+</p>
+
+<h2>3. Information SandCat Does Not Collect</h2>
 <p>SandCat does not collect:</p>
 <ul>
   <li>Names</li>
   <li>Email addresses</li>
   <li>Physical addresses</li>
   <li>Payment information</li>
-  <li>Personal browsing history</li>
   <li>Personal communications</li>
+  <li>Personal browsing history</li>
+  <li>Analytics or telemetry data</li>
 </ul>
 
-<h2>3. How Information Is Used</h2>
+<h2>4. How Information Is Used</h2>
 <p>
-Data processed by SandCat is used only to provide extension functionality,
-including:
+Data processed by SandCat is used only to provide extension functionality, including:
 </p>
 <ul>
-  <li>Aviation lookup features</li>
-  <li>Airport, runway, waypoint, navaid, and procedure search</li>
+  <li>Airport, runway, waypoint, navaid, procedure, and frequency lookup</li>
   <li>ADS-B flight tracking overlays</li>
-  <li>Map overlays on supported aviation websites</li>
-  <li>Workflow tools such as Labelbox ID extraction</li>
+  <li>SkyVector, ForeFlight, and aviation map overlays</li>
+  <li>Aviation dataset caching and searching</li>
+  <li>Labelbox workflow utilities</li>
+  <li>LiveATC and aviation audio/frequency research tools</li>
   <li>Locally saved settings and preferences</li>
+  <li>User-directed exports or downloads</li>
 </ul>
 
-<h2>4. Permissions Justification</h2>
+<h2>5. Permissions Justification</h2>
 
 <h3>Storage</h3>
 <p>
 Used to save preferences, cached aviation datasets, and temporary session state locally.
 </p>
 
-<h3>Tabs, Active Tab, and Web Navigation</h3>
+<h3>Tabs and Active Tab</h3>
 <p>
 Used to detect and interact with supported aviation-related pages when the user is
-actively using the extension. These permissions allow SandCat to identify relevant
-tabs, update overlays, and support aviation workflow tools.
+actively using the extension.
 </p>
 
 <h3>Scripting</h3>
 <p>
-Used to inject SandCat scripts into supported pages in order to provide overlays,
-extract visible aviation-related information, and enable extension functionality.
+Used to inject SandCat scripts into supported pages to provide overlays, extract visible
+aviation-related information, and enable extension functionality.
 </p>
 
 <h3>Clipboard Read</h3>
 <p>
-Used only when the user initiates an action involving pasted data. Clipboard contents
-are not stored or transmitted.
+Used only when the user initiates an action involving pasted aviation-related data.
 </p>
 
-<h2>5. Host Permissions Justification</h2>
+<h3>Alarms</h3>
+<p>
+Used for scheduled local extension tasks, refreshes, reminders, cached-data updates,
+or user-enabled aviation workflow features.
+</p>
+
+<h3>Downloads</h3>
+<p>
+Used only when the user initiates a download or export from SandCat.
+</p>
+
+<h2>6. Host Permissions Justification</h2>
 
 <p>
-SandCat requests access to specific domains in order to provide live aviation data,
-aviation overlays, airport lookup tools, and user-directed workflow enhancements.
+SandCat requests access to specific domains to provide aviation data, overlays,
+airport lookup tools, workflow utilities, and user-directed extension features.
 </p>
 
 <h3>Aviation Data Sources</h3>
 <ul>
   <li>
     <strong>davidmegginson.github.io / ourairports.com</strong><br>
-    Used to retrieve OurAirports CSV data, including airport and runway datasets.
+    Used to retrieve OurAirports aviation datasets.
   </li>
+
   <li>
     <strong>faa.gov / aeronav.faa.gov / nfdc.faa.gov</strong><br>
-    Used to access FAA NASR data, aeronautical data, procedures, and CIFP-related files.
+    Used to access FAA aeronautical data, NASR data, procedures, and CIFP-related files.
   </li>
+
   <li>
     <strong>airnav.com / opennav.com</strong><br>
     Used for airport lookup and supplemental airport information.
+  </li>
+
+  <li>
+    <strong>airservicesaustralia.com</strong><br>
+    Used to access Australian aviation charts, procedures, and waypoint data.
+  </li>
+
+  <li>
+    <strong>raw.githubusercontent.com</strong><br>
+    Used to retrieve SandCat-compatible aviation datasets or extension-maintained data files.
   </li>
 </ul>
 
@@ -146,57 +182,91 @@ aviation overlays, airport lookup tools, and user-directed workflow enhancements
 <ul>
   <li>
     <strong>skyvector.com</strong><br>
-    Used to support SkyVector map overlays and aviation-related data visualization.
+    Used to support SkyVector overlays and aviation-related visualization.
   </li>
+
   <li>
     <strong>globe.adsbexchange.com</strong><br>
-    Used to support ADS-B Exchange flight tracking overlays and aircraft context tools.
+    Used to support ADS-B Exchange overlays and selected-aircraft context tools.
   </li>
+
   <li>
     <strong>plan.foreflight.com</strong><br>
     Used to support ForeFlight planning overlays and related aviation workflow features.
   </li>
+
+  <li>
+    <strong>liveatc.net</strong><br>
+    Used to support aviation frequency and audio lookup workflows.
+  </li>
 </ul>
 
-<h3>User-Directed Workflow Tools</h3>
+<h3>Workflow and Utility Services</h3>
 <ul>
   <li>
     <strong>labelbox.com</strong><br>
     Used only when the user is actively using Labelbox. SandCat may extract visible
-    task or data-row identifiers to assist the user’s workflow. SandCat does not store
-    or transmit Labelbox data externally.
+    task or data-row identifiers to assist the user’s workflow.
+  </li>
+
+  <li>
+    <strong>firestore.googleapis.com</strong><br>
+    Used only for extension-supported cloud data features, if enabled by the user
+    or required by a SandCat feature.
+  </li>
+
+  <li>
+    <strong>ntfy.sh</strong><br>
+    Used only for user-directed notification or alert features.
   </li>
 </ul>
 
 <p>
 Access to these domains is used only for SandCat functionality. SandCat does not sell,
-share, or transmit user data to third parties.
+rent, trade, or share user data.
 </p>
 
-<h2>6. Broad Page Access</h2>
+<h2>7. Broad Page Access</h2>
 <p>
 SandCat may use broad match patterns such as <code>&lt;all_urls&gt;</code> for certain
 content scripts and web-accessible resources to detect supported environments and
 enable overlays or workflow tools.
 </p>
 <p>
-These scripts perform limited checks to determine whether the page is relevant.
-They remain inactive on unrelated websites and do not collect, store, or transmit
-browsing data.
+These scripts perform limited checks to determine whether a page is relevant to SandCat
+functionality. They are not used to collect, store, or transmit unrelated browsing data.
 </p>
 
-<h2>7. No Remote Code Execution</h2>
+<h2>8. Web Accessible Resources</h2>
+<p>
+SandCat includes bundled aviation datasets and local resources such as:
+</p>
+<ul>
+  <li>Airport datasets</li>
+  <li>Waypoint and navaid files</li>
+  <li>Procedure and frequency datasets</li>
+  <li>Australian, Canadian, Irish, Dutch, and Swiss aviation data</li>
+  <li>Visual waypoint datasets</li>
+  <li>Locally packaged scripts and overlays</li>
+</ul>
+<p>
+These resources are packaged with the extension and are used to provide SandCat
+functionality. They do not collect personal information.
+</p>
+
+<h2>9. No Remote Code Execution</h2>
 <p>
 SandCat does not execute remote code. All scripts and application logic are packaged
-with the extension and reviewed as part of the Chrome Web Store submission.
+with the extension.
 </p>
 <p>
-The extension does not dynamically load or execute external JavaScript.
+The extension may retrieve aviation data or user-directed external data from approved
+sources, but it does not dynamically load or execute external JavaScript.
 </p>
 
-<h2>8. No Analytics or Tracking</h2>
+<h2>10. No Analytics or Tracking</h2>
 <p>
-SandCat does not use analytics, tracking tools, or telemetry.
+SandCat does not use analytics, tracking tools, advertising identifiers, or telemetry.
 </p>
 <ul>
   <li>No usage analytics are collected</li>
@@ -204,25 +274,25 @@ SandCat does not use analytics, tracking tools, or telemetry.
   <li>No data is sent to analytics services</li>
 </ul>
 
-<h2>9. Data Sharing</h2>
+<h2>11. Data Sharing</h2>
 <p>
 SandCat does not sell, rent, trade, or share user data.
 </p>
 
-<h2>10. Third-Party Websites</h2>
+<h2>12. Third-Party Websites</h2>
 <p>
-SandCat may interact with third-party aviation websites and tools. These websites
+SandCat may interact with third-party aviation websites and workflow tools. These websites
 operate under their own privacy policies. SandCat only accesses these sites to provide
-the user-requested extension functionality.
+user-requested extension functionality.
 </p>
 
-<h2>11. Changes to This Policy</h2>
+<h2>13. Changes to This Policy</h2>
 <p>
 This privacy policy may be updated from time to time. Updates will be reflected on
 this page with a revised “Last updated” date.
 </p>
 
-<h2>12. Contact</h2>
+<h2>14. Contact</h2>
 <p>
 For questions about this privacy policy, please contact the developer through the
 GitHub repository associated with SandCat.
